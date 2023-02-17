@@ -114,6 +114,9 @@ ul{
     display: none;
 }
 @media all and (max-width: 500px){
+    body{
+        overflow-x:hidden;
+    }
     .image1{
         display: none;
     }
