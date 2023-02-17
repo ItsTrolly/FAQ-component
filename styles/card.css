@@ -147,6 +147,7 @@ ul{
         display: none;
     }
     .ilustartions{
+        width: 100%;
         height: 150px;
         overflow: visible;
     }
