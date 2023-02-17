@@ -115,6 +115,9 @@ ul {
   display: none;
 }
 @media all and (max-width: 500px) {
+  body{
+    margin-top: 25px;
+  }
   .image1 {
     display: none;
   }
