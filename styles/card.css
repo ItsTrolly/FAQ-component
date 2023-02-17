@@ -1,169 +1,167 @@
-body{
-    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 100vh;
-    margin: 0;
-    overflow-x: hidden;
-}   
-
-.Faq-QA{
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    width: 400px;
-}
-.click{
-    font-family: 'Kumbh Sans', sans-serif;
-}
-.arrow{
-    display:block;
-    float: right;
-    border-bottom: 2px solid orange;
-    border-right: 2px solid orange;
-    transform: rotate(45deg);
-    width: 8px;
-    height: 8px;
-    transition: 0.15s;
-}
-.expand-text{
-    cursor: pointer;
-    border-bottom: 2px solid hsl(240, 5%, 91%);
-    transition: 0.15s ease-in-out;
-    color: hsl(237, 12%, 33%);
-}
-.expand-text:hover{
-    color: orange;
-}
-ul{
-    font-size: 0.9rem;
-    color: hsl(240, 6%, 50%);
-    padding-left: 0;
-    list-style: none;
-    overflow: hidden;
-    height: 0;
-    transition: .3s ease;
-}
-.active .expand-text{
-    border-bottom: none;
-    color: hsl(237, 12%, 33%);
-    font-weight: 700;
-}
-.active  .arrow{
-    margin-top: 5px;
-    transform: rotate(225deg);
-}
-.active ul{
-    height: 60px;
-    border-bottom: 2px solid hsl(240, 5%, 91%);
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
-.card{
-    display: flex;
-    max-width: auto;
-    height: 500px;
-    background-color: white ;
-    padding: 30px;
-    border-radius: 20px;
+.Faq-QA {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  max-width: 400px;
 }
-.center{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.click {
+  font-family: "Kumbh Sans", sans-serif;
 }
-.right-side{
-    margin-left: 50px;
-    margin-right:20px;
+.arrow {
+  display: block;
+  float: right;
+  border-bottom: 2px solid orange;
+  border-right: 2px solid orange;
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+  transition: 0.15s;
+}
+.expand-text {
+  cursor: pointer;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  transition: 0.15s ease-in-out;
+  color: hsl(237, 12%, 33%);
+}
+.expand-text:hover {
+  color: orange;
+}
+ul {
+  font-size: 0.9rem;
+  color: hsl(240, 6%, 50%);
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  height: 0;
+  transition: 0.3s ease;
+}
+.active .expand-text {
+  border-bottom: none;
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+}
+.active .arrow {
+  margin-top: 5px;
+  transform: rotate(225deg);
+}
+.active ul {
+  height: 60px;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+.card {
+  display: flex;
+  max-width: auto;
+  height: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+.center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-side {
+  margin-left: 50px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: "Kumbh Sans", sans-serif;
+  padding-left: 20px;
+}
+.ilustartions {
+  position: relative;
+  margin: -30px;
+  width: 500px;
+}
+.contain {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.image1 {
+  position: absolute;
+  top: -290px;
+  left: -580px;
+  z-index: 1;
+}
+.image2 {
+  position: absolute;
+  top: 90px;
+  left: -80px;
+  z-index: 2;
+}
+.image3 {
+  position: absolute;
+  top: 230px;
+  left: -95px;
+  z-index: 3;
+}
+.mobile-img,
+.mobile-img2 {
+  display: none;
+}
+@media all and (max-width: 500px) {
+  .image1 {
+    display: none;
+  }
+  .image3 {
+    display: none;
+  }
+  .mobile-img {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    left: 25px;
+    display: block;
+  }
+  .mobile-img2 {
+    position: relative;
+    display: block;
+    width: 300px;
+    top: 0px;
+    left: 25px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .card {
     display: flex;
     flex-direction: column;
-}
-
-.title{
-    font-family: 'Kumbh Sans', sans-serif;
-    padding-left: 20px;
-}
-.ilustartions{
-    position: relative;
-    margin: -30px;
-    width: 500px;
-}
-.contain{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-.image1{
-    position: absolute;
-    top: -290px;
-    left: -580px;
-    z-index: 1;
-}
-.image2{
-    position: absolute;
-    top: 90px;
-    left: -80px;
-    z-index: 2;
-}
-.image3{
-    position: absolute;
-    top: 230px;
-    left: -95px;
-    z-index: 3;
-}
-.mobile-img, .mobile-img2{
+    padding: 30px;
+    width: 300px;
+    height: auto;
+  }
+  .image2 {
     display: none;
+  }
+  .ilustartions {
+    height: 150px;
+    width: 100%;
+    overflow: visible;
+  }
+  .right-side {
+    margin: 0px;
+  }
+  .expand-text {
+    font-size: 0.85rem;
+  }
+  .Faq-QA {
+    width: 100%;
+    padding: 0px;
+  }
 }
-@media all and (max-width: 500px){
-    body{
-        overflow-x:hidden;
-    }
-    .image1{
-        display: none;
-    }
-    .image3{
-        display: none;
-    }
-    .mobile-img{
-        position: absolute;
-        width: 300px;
-        top: -140px;
-        left: 25px;
-        display: block;
-    }
-    .mobile-img2{
-        position: relative;
-        display: block;
-        width: 300px;
-        top: 0px;
-        left: 25px;
-    }
-    h1{
-        text-align: center;
-    }
-    .card{
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        width: 300px;
-        height: auto;
-    }
-    .image2{
-        display: none;
-    }
-    .ilustartions{
-        height: 150px;
-        overflow: visible;
-    }
-    .right-side{
-        margin: 0px;
-    }
-    .expand-text{
-        font-size: 0.85rem;
-    }
-    .Faq-QA{
-        width: 100%;
-        padding: 0px;
-    }
 
-}
